@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Raleway:ital,wght@1,500&family=Roboto+Mono:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+:root {
+  --main-white: #f0f0f0;
+  --main-gray: #303841;
+}
+
+#header-img {
+  height: 100px;
+  margin-left: 15px;
+}
+li,
+a {
+  font-size: 25px;
+  font-weight: bolder;
+
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  transition: whitesmoke 0.3s ease-out;
+}
+.navbar-link li {
+  display: inline-block;
+  padding: 0px 20px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+.navbar-link li a {
+  transition: all 0.3s ease 0s;
+  color: black;
+}
+.navbar-link li a:hover {
+  color: rgb(19, 44, 51);
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar-link li {
+    display: block;
+    padding: 10px 20px 10px 0px;
+  }
+  .navbar-link li a {
+    transition: all 0.3s ease 0s;
+    color: black;
+  }
+  .navbar-link li a:hover {
+    color: white;
+  }
+}
+
+/* Ab yhn navbar ke niche wla kaam hoga */
+.styling {
+  background: #132c33;
+}
+.styling {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.styling h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: whitesmoke 0.3s ease-out;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  word-spacing: 2px;
+  font-family: "Roboto Mono", monospace;
+}
+.styling h1:hover {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding-bottom: 12px;
+  word-spacing: 1px;
+  color: whitesmoke;
+  transition: whitesmoke 0.3s ease-out;
+  font-family: "Roboto Mono", monospace;
+}
+.styling p {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  word-spacing: 2px;
+  font-family: "Caveat", cursive;
+}
+.styling p:hover {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  word-spacing: 2px;
+  color: red;
+  font-family: "Caveat", cursive;
+}
+.myphoto {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 5px white;
+  transition: whitesmoke 0.3s ease-out;
+  box-shadow: #303841;
+}
+
+
+/*  Let's move on */
+
+#project-sectiongrid {
+  background: #231e23;
+}
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 0rem;
+}
+
+.h-project {
+  margin: 0px 10px 5px 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  word-spacing: 2px;
+  color: white;
+  transition: whitesmoke 0.3s ease-out;
+  font-family: "Raleway", sans-serif;
+}
+
+.img-grid {
+  height: 400px;
+
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainproject-title {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project-title:hover .code {
+  color: #ff7f50;
+}
+
+.project-title {
+  font-size: 1rem;
+  padding: 20px;
+  color: whitesmoke;
+  transition: whitesmoke 0.3s ease-out;
+  text-align: center;
+}
+
+/* Contact Details */
+#contactsection {
+  background: #132c33;
+  margin: 0;
+  padding: 0;
+}
+
+.parta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.parta h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+}
+.parta p {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.partb {
+  display: flex;
+  
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 5px 0px 5px;
+  max-width: 100%;
+}
+.style-a {
+  color: white;
+  padding: 20px 5rem 20px 10px;
+}
+.style-a:hover {
+  color: #ff7f50;
+  padding: 20px 5rem 20px 10px;
+  
+}
+.fab {
+  color: white;
+}
+.fab:hover {
+  color: #ff7f50;
+}
+/* Last part */
+
+.lastpartfoot {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+margin-top: 0;
+  background: #231e23;
+  color: white;
+}
+.lastpartfoot p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .lastpartfoot {
+    background: #231e23;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+  }
+  .lastpartfoot p {
+    font-size: 1rem;
+    padding: 20px 0px 20px 0px;
+  }
+}
